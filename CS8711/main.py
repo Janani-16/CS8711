@@ -11,7 +11,7 @@ def index():
     if request.method == "POST":       
         cityName = request.form.get("cityName")  
         if cityName:
-            weatherApiKey = '8887a377dd0c7a530690248cf721071f'
+            weatherApiKey = '2e4ad490a8f6263c7775c0b40a13a7ff'
             url = "https://api.openweathermap.org/data/2.5/weather?q="+cityName+"&appid=" + weatherApiKey
             weatherData = requests.get(url).json()
         else:
